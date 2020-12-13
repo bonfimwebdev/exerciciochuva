@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anais do Simpósio Latino Americano de Ciências de Alimentos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -127,9 +128,39 @@
             </div>
                 
             <div class="content-wrapper">
+                <!--Texto adicionado da forma abaixo para melhor visualização e manutenção do código.-->
                 <p class="box-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... ver mais
-                </p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. 
+                    Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. 
+                    Fusce auctor eros sed magna ultricies gravida. 
+                    Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. 
+                    Donec finibus nisi tellus, ut viverra lorem vestibulum ut. 
+                    Phasellus condimentum orci id leo condimentum lobortis et non lorem. 
+                    Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. <br/><br/>
+                    Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. 
+                    Proin dapibus consequat <span id="pontos">...</span><span id="mais">feugiat. 
+                    Proin dictum justo arcu, quis vestibulum augue lacinia quis. 
+                    Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. 
+                    Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. 
+                    Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. 
+                    Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. 
+                    Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio. <br/><br/> 
+                    Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. 
+                    Donec eleifend vehicula sem nec dapibus. 
+                    Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. 
+                    Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. 
+                    Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. 
+                    Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. 
+                    Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. 
+                    Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa. <br/><br/>
+                    Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. 
+                    Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. 
+                    Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. 
+                    Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. 
+                    Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><button onclick="leiaMais()" id="btnLeiaMais">Leia Mais</button>
+                </p> 
             </div>
         </div>
 
@@ -158,9 +189,27 @@
 
                 <p id="discussion-text">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
 
-                ********
+                <span id="pontos1">...</span>
+                <button onclick="expandirDivTopico()" id="btnCriarTopico">Criar tópico</button>
+                <div id="topic-wrapper">
+                    <div class="topic-creation-item">
+                        <p id="item-creation-text">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                    </div>
 
-                <!--Expandir div-->
+                    <div class="topic-creation-item">
+                        <div id="topic-issue">
+                            <h6 class="topic-title">Assunto</h6>
+                        </div>
+
+                        <!--ADICIONAR INPUTS DE ASSUNTO, PLACEHOLDER DO ASSUNTO E TEXTAREA DA MENSAGEM-->
+                    </div>
+                </div>
+
+                <div id="topic-post-warning">
+                    <h5 id="post-warning-title">Seu tópico foi enviado com sucesso! :D</h5>
+                    <p id="post-warning-text">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido! <br/><br/>
+                    <span id="discover">Descubra outros trabalhos!</span></p>
+                </div>
 
                 <hr id="separation-line">
 
@@ -218,5 +267,7 @@
     <footer>
         <img src="./img/footer.png" alt="" id="footer">
     </footer>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
