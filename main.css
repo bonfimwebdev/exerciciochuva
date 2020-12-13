@@ -15,9 +15,16 @@
 
 
 /***** Bloco 2 *****/
-
+#mais {
+    display: none;
+}
 
 /***** Bloco 3 *****/
+#topic-wrapper {
+    display: none;
+}
 
-
+#pontos1 {
+    visibility: hidden;
+}
 /********** Footer **********/
