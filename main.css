@@ -5,12 +5,62 @@
 
 
 /********** Navbar **********/
+#sidebar-wrapper {
+    position: fixed;
+    width: 220px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25)
+}
 
+#sidebar-first-item {
+    height: 70px;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#sidebar-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    margin: auto;
+    color: #fff;
+}
+
+.sidebar-link {
+    list-style-type: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    height: 33px;
+    margin-left: -32px;
+    padding-left: 30px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 33px;
+    color: #725C5C;
+}
+
+#selected-line {
+    background: #FDF1EB;
+}
+
+#selected-indicator {
+    display: inline-block;
+    background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+    margin: 0 25px 0 -30px;
+    width: 5px;
+}
 
 /********** Header **********/
 
 
 /********** Main **********/
+
 /***** Bloco 1 *****/
 
 
@@ -20,7 +70,7 @@
 }
 
 /***** Bloco 3 *****/
-#topic-wrapper {
+#topic-wrapper, #topic-post-warning, #hidden-topics, #hidden-topic-text {
     display: none;
 }
 
