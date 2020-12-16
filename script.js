@@ -13,6 +13,8 @@ var hiddenTopics=document.getElementById("hidden-topics");
 var hiddenTopicText=document.getElementById("hidden-topic-text");
 var changeFirstText=document.getElementById("changeable-first-info");
 var changeSecondText=document.getElementById("changeable-second-info");
+var btnCriarNovoTopico=document.getElementById("btnCriarNovoTopico");
+var pontos4=document.getElementById("pontos4");
 
 /**Expandir texto oculto**/
 function leiaMais(){
@@ -69,5 +71,18 @@ function expandirTopicosOcultos(){
         hiddenTopicText.style.display="inline";
         changeFirstText.innerHTML="4 likes";
         changeSecondText.innerHTML="4 respostas";
+    }
+}
+
+/**Enviar nova postagem**/
+function enviarNovaPostagem(){
+    if(pontos4.style.display === "none"){
+        pontos2.style.display="inline";
+        topicWarning.style.display="none";
+        btnCriarNovoTopico.innerHTML="Criar novo tópico";
+    }else{
+        pontos4.style.display="none";
+        topicWarning.style.display="none";
+        topicWrapper.style.display="inline";
     }
 }
