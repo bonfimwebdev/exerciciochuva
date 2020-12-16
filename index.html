@@ -14,46 +14,49 @@
 
 <body>
     <nav id="sidebar-wrapper">
-        <div class="sidebar-item">
+        <div id="sidebar-first-item">
             <p id="sidebar-text">SLACA 2019</p>
         </div>
 
-        <div class="sidebar-item">
+        <div id="sidebar-second-item">
             <img src="./img/navbar-picture.png" alt="13 Slaca Logo">
         </div>
 
-        <div class="sidebar-item">
+        <div id="sidebar-third-item">
             <ul id="sidebar-links-wrapper">
                 <li class="sidebar-link">Apresentação</li>
                 <li class="sidebar-link">Comitês</li>
                 <li class="sidebar-link">Autores</li>
                 <li class="sidebar-link">Eixos Tematicos</li>
-                <li class="sidebar-link"><span id="selected">.</span>Trabalhos</li>
+                <li class="sidebar-link" id="selected-line"><span id="selected-indicator">.</span>Trabalhos</li>
                 <li class="sidebar-link">Contato</li>
             </ul>
         </div>
     </nav>
 
     <header>
-        <div class="header-item">
+        <div class="header-item" id="header-first-item">
             <p class="header-text">Anais do Simpósio Latino Americano de Ciências de Alimentos <br/> 
             <span id="header-big-text">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</span> <br/>
             ISSN: 1234-5678</p>
         </div>
 
-        <div class="header-item">
-            *********
-            <!--Dropdown escolha de idioma-->
+        <div class="header-item" id="header-second-item">
+            <select name="languages" id="language-selector">
+                <option value="en-us">EN-US</option>
+                <option selected value="pt-br">PT-BR</option>               
+                <option value="es-es">ES-ES</option>
+            </select>
         </div>
 
-        <div class="header-item">
-            <div class="inner-header-item">
-                <p class="inner-header-item-text">Bem vindo!</p>
-                <p class="inner-header-item-text">alguem12@galoascience.com</p>
+        <div class="header-item" id="header-third-item">
+            <div id="first-inner-header-item">
+                <span class="inner-header-item-text">Bem vindo!</span> <br/>
+                <span class="inner-header-item-text">alguem12@galoascience.com</span>
             </div>
         
-            <div class="inner-header-item">
-                <img src="./img/header-icon.png" alt="User icon">
+            <div id="second-inner-header-item">
+                <img src="./img/header-icon.png" alt="User icon" id="user-header-icon">
             </div>
         </div>
     </header>
@@ -61,59 +64,65 @@
     <main>
         <!--Bloco 1-->
         <div id="first-main-container">
-            <div class="inner-main-item">
-                <h3>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h3>
+            <div class="inner-main-item" id="first-inner-main-container">
+                <h4>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h4>
             </div>
 
-            <div class="inner-main-item">
+            <div class="inner-main-item" id="second-inner-main-container">
                 <div id="buttons-wrapper">
-                    <div class="inner-main-button">
+                    <div class="inner-main-button" id="first-inner-button">
                         <a href="#"><img src="./img/download-icon.png" alt="">Download</a>
                     </div>
 
-                    <div class="inner-main-button">
+                    <div class="inner-main-button" id="second-inner-button">
                         <a href="#"><img src="./img/star-icon.png" alt=""></a>
                     </div>
 
-                    <div class="inner-main-button">
+                    <div class="inner-main-button" id="third-inner-button">
                         <a href="#"><img src="./img/doi-icon.png" alt=""></a>
                     </div>
+                </div>
+
+                <div id="quote-text-wrapper">
+                    <p id="quote-text-wrapper">COMO CITAR ESSE TRABALHO?</p>
                 </div>
             </div>
 
             <div class="inner-main-item" id="fake-video">
-                <div class="inner-fake-video">
-                    <p class="fake-video-text">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</p>
-                </div>
-
-                <div class="inner-fake-video">
-                    <div class="video-bottom-description">
-                        <img src="./img/video-icon.png" alt="Video owner icon" id="video-icon">
+                <div id="video-wallpaper-wrapper">
+                    <div class="inner-fake-video">
+                        <p id="fake-video-text">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</p>
                     </div>
-
-                    <div class="video-bottom-description">
-                        <p id="bottom-description-text"><span id="video-creator">Beatriz Christiane Melo</span> <br/>
-                        <span id="university">FCA / Universidade Estadual de Campinas</span></p>
+    
+                    <div class="inner-fake-video" id="video-bottom-container">
+                        <div class="video-bottom-description" id="first-video-bottom-item">
+                            <img src="./img/video-icon.png" alt="Video owner icon" id="video-icon">
+                        </div>
+    
+                        <div class="video-bottom-description" id="second-video-bottom-item">
+                            <p id="bottom-description-text"><span id="video-creator">Beatriz Christiane Melo</span> <br/>
+                            <span id="university">FCA / Universidade Estadual de Campinas</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="inner-main-item">
+            <div class="inner-main-item" id="forth-inner-main-container">
                 <div id="title-box">
                     <p class="box-title">Detalhes</p>
                 </div>
 
                 <div id="main-content-box">
-                    <p class="inner-content-text">Tipo de Apresentação: Pôster <br/>
-                        Eixo temático: Alimentação e saúde (AS) <br/> 
-                        Palavras-chaves: Alimentos funcionais, alimentação escolar. </p>
-                    <p class="inner-content-text">Autores: <br/>
+                    <p class="inner-content-text">Tipo de Apresentação: <span class="heavy-text">Pôster</span><br/>
+                        Eixo temático: <span class="heavy-text">Alimentação e saúde (AS)</span> <br/> 
+                        Palavras-chaves: <span class="heavy-text">Alimentos funcionais, alimentação escolar.</span> </p>
+                    <p class="inner-content-text"><span class="heavy-text">Autores:</span> <br/>
                         Galileo Galilei¹<br/>
                         Berta Lange de Morretes² <br/>
                         Isaac Newton³ <br/>
                         Cesar Lattes¹ <br/>
                         Stephen Hawking⁴</p>
-                    <p class="inner-content-text">¹Universidade Estadual de Campinas <br/>
+                    <p class="inner-content-text" id="small-text">¹Universidade Estadual de Campinas <br/>
                         ²Universidade de São Paulo <br/>
                         ³Instituto Nacional de Pesquisas Espaciais <br/>
                         ⁴Universidade Federal do Rio de Janeiro</p>
@@ -139,7 +148,7 @@
                     Phasellus condimentum orci id leo condimentum lobortis et non lorem. 
                     Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. <br/><br/>
                     Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. 
-                    Proin dapibus consequat <span id="pontos">...</span><span id="mais">feugiat. 
+                    Proin dapibus consequat<span id="pontos">...</span> <span id="mais"> feugiat. 
                     Proin dictum justo arcu, quis vestibulum augue lacinia quis. 
                     Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. 
                     Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. 
@@ -159,7 +168,7 @@
                     Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. 
                     Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. 
                     Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><button onclick="leiaMais()" id="btnLeiaMais">Leia Mais</button>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><button onclick="leiaMais()" id="btnLeiaMais">ver mais</button>
                 </p> 
             </div>
         </div>
@@ -171,7 +180,7 @@
             </div>
                 
             <div class="content-wrapper">
-                <h4 >Compartilhe suas ideias ou dúvidas com os autores!</h4>
+                <h4 id="initial-post-title">Compartilhe suas ideias ou dúvidas com os autores!</h4>
 
                 <div id="icons-wrapper">
                     <div class="discussion-box-icon">
@@ -189,19 +198,32 @@
 
                 <p id="discussion-text">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
 
-                <span id="pontos1">...</span>
-                <button onclick="expandirDivTopico()" id="btnCriarTopico">Criar tópico</button>
+                <span id="pontos1"></span>
+                <button onclick="expandirDivTopico()" id="btnCriarTopico"> <span id="big-signal">+</span> criar tópico</button>
                 <div id="topic-wrapper">
                     <div class="topic-creation-item">
                         <p id="item-creation-text">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
                     </div>
 
                     <div class="topic-creation-item">
-                        <div id="topic-issue">
-                            <h6 class="topic-title">Assunto</h6>
-                        </div>
+                        <h4 class="topic-creation-title">Assunto</h4>
+                        <input type="text" name="topic-title-input" id="topic-title-input" placeholder="Defina um tópico sucinto para notificar os autores...">
+                        <h4 class="topic-creation-title">Conteúdo</h4>
+                        <textarea name="topic-content" id="topic-content"></textarea>
+                        
+                        <div id="topic-creation-bottom">
+                            <div class="topic-bottom-item">
+                                <p id="bold">B</p>
+                            </div>
 
-                        <!--ADICIONAR INPUTS DE ASSUNTO, PLACEHOLDER DO ASSUNTO E TEXTAREA DA MENSAGEM-->
+                            <div class="topic-bottom-item">
+                                <p id="italic">I</p>
+                            </div>
+                                
+                            <div class="topic-bottom-item">
+                                <span id="pontos2"></span> <button onclick="enviarPostagem()" id="btnEnviarPostagem">Enviar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -209,6 +231,8 @@
                     <h5 id="post-warning-title">Seu tópico foi enviado com sucesso! :D</h5>
                     <p id="post-warning-text">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido! <br/><br/>
                     <span id="discover">Descubra outros trabalhos!</span></p>
+
+                    <button id="btnCriarNovoTopico">Criar novo tópico</button>
                 </div>
 
                 <hr id="separation-line">
@@ -220,11 +244,11 @@
                         <p class="topic-text">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
                         <div class="topic-bottom-content">
                             <div class="bottom-content-item">
-                                <p id="three-points">⁝</p>
+                                <p class="three-points">⁝</p>
                             </div>
 
-                            <div class="bottom-content-item">
-                                <img src="./img/heart-icon.png" alt="Heart" id="heart">
+                            <div class="bottom-content-item heart-background">
+                                <img src="./img/heart-icon.png" alt="Heart" class="heart">
                             </div>
 
                             <div class="bottom-content-item">
@@ -237,27 +261,55 @@
                         </div>
                     </div>
 
-                    <div class="discussion-topic">
+                    <div class="discussion-topic" id="expansible-topic" onclick="expandirTopicosOcultos()">
                         <h6 class="topic-title">Assunto da pergunta aparece aqui</h6>
                         <p class="topic-autor">Carlos Henrique Santos</p>
-                        <p class="topic-text">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                        <p class="topic-text">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão 
+                            e impacto de processo formativo situado impacto de processo formativo processo<span id="pontos3">...</span> 
+                            <span id="hidden-topic-text">resente relato inscreve-se no campo da 
+                            análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</span></p>
                         <div class="topic-bottom-content">
                             <div class="bottom-content-item">
-                                <p id="three-points">⁝</p>
+                                <p class="three-points">⁝</p>
+                            </div>
+
+                            <div class="bottom-content-item heart-background">
+                                <img src="./img/heart-icon.png" alt="Heart" class="heart">
                             </div>
 
                             <div class="bottom-content-item">
-                                <img src="./img/heart-icon.png" alt="Heart" id="heart">
+                                <p class="bottom-content-text" id="changeable-first-info">1 like</p>
                             </div>
 
                             <div class="bottom-content-item">
-                                <p class="bottom-content-text">1 like</p>
-                            </div>
-
-                            <div class="bottom-content-item">
-                                <p class="bottom-content-text">1 resposta</p>
+                                <p class="bottom-content-text" id="changeable-second-info">1 resposta</p>
                             </div>
                         </div>
+
+                        <div id="hidden-topics">
+                            <div class="topic-answer gray-backgrounded-answer">
+                                <p class="topic-autor">Adriano da Silva</p>
+                                <p class="topic-text">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                            </div>
+
+                            <div class="topic-answer">
+                                <p class="topic-autor">Carlos Henrique Santos</p>
+                                <p class="topic-text">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. 
+                                    <br/><br/> Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                            </div>
+
+                            <div class="topic-answer gray-backgrounded-answer">
+                                <p class="topic-autor">Carmila Ferreira Andrade</p>
+                                <p class="topic-text">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                    <br/><br/>Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                            </div>
+
+                            <div class="topic-answer gray-backgrounded-answer">
+                                <p class="topic-autor">Ana Carolina</p>
+                                <p class="topic-text">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -268,6 +320,6 @@
         <img src="./img/footer.png" alt="" id="footer">
     </footer>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
