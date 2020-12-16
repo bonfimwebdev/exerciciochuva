@@ -1,9 +1,21 @@
+var pontos=document.getElementById("pontos");
+var maisTexto=document.getElementById("mais");
+var btnLeiaMais=document.getElementById("btnLeiaMais");
+var pontos1=document.getElementById("pontos1");
+var topicWrapper=document.getElementById("topic-wrapper");
+var btnCriarTopico=document.getElementById("btnCriarTopico");
+var discussionText=document.getElementById("discussion-text");
+var pontos2=document.getElementById("pontos2");
+var topicWarning=document.getElementById("topic-post-warning");
+var btnEnviarPostagem=document.getElementById("btnEnviarPostagem");
+var pontos3=document.getElementById("pontos3");
+var hiddenTopics=document.getElementById("hidden-topics");
+var hiddenTopicText=document.getElementById("hidden-topic-text");
+var changeFirstText=document.getElementById("changeable-first-info");
+var changeSecondText=document.getElementById("changeable-second-info");
+
 /**Expandir texto oculto**/
 function leiaMais(){
-    var pontos=document.getElementById("pontos");
-    var maisTexto=document.getElementById("mais");
-    var btnLeiaMais=document.getElementById("btnLeiaMais");
-
     if(pontos.style.display === "none"){
         pontos.style.display="inline";
         maisTexto.style.display="none";
@@ -11,17 +23,12 @@ function leiaMais(){
     }else{
         pontos.style.display="none";
         maisTexto.style.display="inline";
-        btnLeiaMais.innerHTML="Leia Menos";
+        btnLeiaMais.style.display="none";
     }
 }
 
 /**Expandir campo de criação de tópico**/
 function expandirDivTopico(){
-    var pontos1=document.getElementById("pontos1");
-    var topicWrapper=document.getElementById("topic-wrapper");
-    var btnCriarTopico=document.getElementById("btnCriarTopico");
-    var discussionText=document.getElementById("discussion-text");
-
     if(pontos1.style.display === "none"){
         discussionText.style.display="inline";
         pontos1.style.display="inline";
@@ -37,10 +44,6 @@ function expandirDivTopico(){
 
 /**Enviar postagem**/
 function enviarPostagem(){
-    var pontos2=document.getElementById("pontos2");
-    var topicWarning=document.getElementById("topic-post-warning");
-    var btnEnviarPostagem=document.getElementById("btnEnviarPostagem");
-
     if(pontos2.style.display === "none"){
         pontos2.style.display="inline";
         topicWarning.style.display="none";
@@ -48,18 +51,12 @@ function enviarPostagem(){
     }else{
         pontos2.style.display="none";
         topicWarning.style.display="inline";
-        btnEnviarPostagem.style.display="none";
+        topicWrapper.style.display="none";
     }
 }
 
 /**Expandir respostas do tópico que estão ocultas**/
 function expandirTopicosOcultos(){
-    var pontos3=document.getElementById("pontos3");
-    var hiddenTopics=document.getElementById("hidden-topics");
-    var hiddenTopicText=document.getElementById("hidden-topic-text");
-    var changeFirstText=document.getElementById("changeable-first-info");
-    var changeSecondText=document.getElementById("changeable-second-info");
-
     if(pontos3.style.display === "none"){
         pontos3.style.display="inline";
         hiddenTopics.style.display="none";
