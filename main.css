@@ -79,18 +79,13 @@ header{
     font-size: 22px;
 }
 
-#header-second-item{
-    height: 35px;
-}
-
 #language-selector {
     background: transparent;
 }
 
-#header-third-item{
-    height: 34px;
+#header-second-item, #header-third-item{
     display: flex;
-    justify-content: ;
+    align-items: center;
 }
 
 #first-inner-header-item {
@@ -276,6 +271,7 @@ main, footer {
     display: flex;
     align-items: center;
     color: #4E4E4E;
+    padding: 30px 10px 10px 10px;
 }
 
 #main-content-box {
@@ -322,6 +318,7 @@ main, footer {
     display: flex;
     align-items: center;
     color: #4E4E4E;
+    padding: 30px 10px 10px 10px;
 }
 
 .content-wrapper {
@@ -337,6 +334,7 @@ main, footer {
     align-self: stretch;
     flex-grow: 0;
     margin: 0px 0px;
+    padding: 20px 10px 10px 10px;
 }
 
 #btnLeiaMais {
@@ -373,7 +371,7 @@ main, footer {
     justify-content: center;
 }
 
-#btnCriarTopico, #btnEnviarPostagem {
+#btnCriarTopico, #btnEnviarPostagem, #btnCriarNovoTopico {
     background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 4px;
@@ -386,6 +384,8 @@ main, footer {
     line-height: 16px;
     text-align: center;
     color: #FFFFFF;
+    display: block;
+    margin: auto;
 }
 
 #big-signal {
@@ -417,6 +417,7 @@ main, footer {
 #topic-creation-bottom {
     height: 33px;
     display: flex;
+    justify-content: space-between;
     background: #EAF1F2;
     border: 1px solid #CCCCCC;
     box-sizing: border-box; 
@@ -429,6 +430,7 @@ main, footer {
     font-weight: bolder;
     font-family: "Roboto";
     margin: 5px 10px;
+    line-height: 35px;
 }
 
 #italic {
@@ -437,6 +439,7 @@ main, footer {
     font-style: italic;
     font-family: "Roboto";
     margin: 5px 10px;
+    line-height: 35px;
 }
 
 #btnEnviarPostagem {
@@ -448,8 +451,20 @@ main, footer {
     align-self: center;
 }
 
-#topic-post-warning {
+#post-warning-title, #post-warning-text, #discover {
+    text-align: center;
+    margin: 10px;
+}
 
+#discover {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 137.5%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #F48F44;
 }
 
 #separation-line {
@@ -530,3 +545,10 @@ main, footer {
 }
 
 /********** Footer **********/
+footer {
+    margin: 20px;
+}
+
+#footer-image {
+    width: 100%;
+}
